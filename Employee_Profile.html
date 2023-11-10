@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Employee Profile</title>
+</head>
+
+<body>
+
+    <div class="container-fluid m-auto">
+        <h4 class="mt-3">Employee Profile</h4>
+        <div class="row justify-content-evenly">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="OfficeLocationTextBox">Office/Location:</label>
+                    <input type="text" id="OfficeLocationTextBox" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="EmployeeIDTextBoxx">Employee ID:</label>
+                    <input type="text" id="EmployeeIDTextBoxx" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="FatherHusbandNameTextBox">Father/Husband Name:</label>
+                    <input type="text" id="FatherHusbandNameTextBox" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="FullNameTextBox">Full Name:</label>
+                    <input type="text" id="FullNameTextBox" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="ComboBox">Title:</label>
+                    <select id="ComboBox" class="form-control form-select">
+                        <option value="MR">MR</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 mt-3">
+                <div class='d-flex justify-content-end'>
+                    <div style="height:100px; width:100px; border: 1px solid black ; right:0"></div>
+                </div>
+                <div class="form-group d-flex flex-column mt-2">
+                    <button id="choosefile">Choose File</button>
+                    <button id="UploadButton" class="btn btn-primary mt-2">Upload</button>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <h4>NATIONALITY & IDS</h4>
+        <div class="row justify-content-evenly">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="DropDownList1">Nationality:</label>
+                    <select id="DropDownList1" class="form-control form-select" ClientIDMode="Static">
+                        <option value="Pakistani">Pakistani</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="IDNoTextBox">ID No:</label>
+                    <input type="text" id="IDNoTextBox" class="form-control" ClientIDMode="Static">
+                </div>
+            </div>
+
+            <div class="col-md-4 ">
+                <div class="form-group">
+                    <label for="DateOfBirthTextBox">Date of Birth:</label>
+                    <input type="date" id="DateOfBirthTextBox" class="form-control" ClientIDMode="Static">
+                </div>
+                <div class="form-group">
+                    <label for="IDExpiryDateTextBox">ID Expiry Date:</label>
+                    <input type="date" id="IDExpiryDateTextBox" class="form-control" ClientIDMode="Static">
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <h4>Basic Information</h4>
+        <div class="row justify-content-evenly">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="sectionDropDownList">Section:</label>
+                    <div class="input-group">
+                        <select id="sectionDropDownList" class="form-control form-select">
+                            <option value="Operation">Operation</option>
+                            <option value="...">...</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="departmentDropDownList">Department:</label>
+                    <div class="input-group">
+                        <label>OPR Operation</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="departmentDropDownList">Department Level:</label>
+                    <div class="input-group">
+                        <select id="departmentDropDownList" class="form-control form-select">
+                            <option value="OPR Operation">OPR Operation</option>
+                            <option value="...">...</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DropDownList3">Marital Status:</label>
+                    <div class="input-group">
+                        <select id="DropDownList3" class="form-control form-select">
+                            <option value="Married">Married</option>
+                            <option value="Single">Single</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="designDropDownList">Designation:</label>
+                    <div class="input-group">
+                        <select id="designDropDownList" class="form-control form-select">
+                            <option value="Trainee Crew Member">Trainee Crew Member</option>
+                            <option value="...">...</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DropDownList7">Religion:</label>
+                    <div class="input-group">
+                        <select id="DropDownList7" class="form-control form-select">
+                            <option value="Christian">Christian</option>
+                            <option value="Muslim">Muslim</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DropDownList4">Blood Group:</label>
+                    <div class="input-group">
+                        <select id="DropDownList4" class="form-control form-select">
+                            <option value="O+">O+</option>
+                            <option value="B+">B+</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="AddDesignTextBox">Add Design:</label>
+                    <div class="input-group">
+                        <input type="text" id="AddDesignTextBox" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="policyDropDownList">Leave Policy:</label>
+                    <div class="input-group">
+                        <select id="policyDropDownList" class="form-control form-select">
+                            <option value="02">02</option>
+                            <option value="01">01</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DropDownList2">Gender:</label>
+                    <div class="input-group">
+                        <select id="DropDownList2" class="form-control form-select">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="HODCheckBox" />
+                    <label for="HODCheckBox">HOD</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="AsstHODCheckBox" />
+                    <label for="AsstHODCheckBox">Asst.HOD</label>
+                </div>
+            </div>
+        </div>
+
+
+        <hr />
+
+        <h4>Employee Status</h4>
+        <div class="row m-xl-5 mt-0">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="JoiningDateTextBox">Joining Date:</label>
+                    <input type="date" id="JoiningDateTextBox" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="DropDownList5">Employment Status:</label>
+                    <select id="DropDownList5" class="form-control form-select">
+                        <option value="Part Time">Part Time</option>
+                        <option value="Full Time">Full Time</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="DropDownList6">Job Status:</label>
+                    <select id="DropDownList6" class="form-control form-select">
+                        <option value="On Job">On Job</option>
+                        <option value="Freelance">Freelance</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="DateOfLeavingTextBox">Date Of Leaving:</label>
+                    <input type="date" id="DateOfLeavingTextBox" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="ReasonTextarea">Reason:</label>
+                    <textarea id="ReasonTextarea" rows="4" cols="50" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="DropDownList6">Grade:</label>
+                    <select id="DropDownList8" class="form-control form-select">
+                        <option value="Trainee crew member">Trainee crew member</option>
+                        <option value="team member">team member</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="TextBox1">Confirmation Date:</label>
+                    <input type="date" id="TextBox1" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
