@@ -1,0 +1,3 @@
+{
+    "rewrites": [{ "source": "/(.*)", "destination": "/Employee_Profile.html" }]
+}
